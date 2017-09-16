@@ -1,14 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
-key_up = keyboard_check_pressed(vk_up);
-key_down = keyboard_check_pressed(vk_down);
+key_left = keyboard_check(vk_left) || keyboard_check(ord("A"));
+key_right = keyboard_check(vk_right)|| keyboard_check(ord("D"));
+key_up = keyboard_check_pressed(vk_up)|| keyboard_check_pressed(ord("W"));
+key_down = keyboard_check_pressed(vk_down)|| keyboard_check_pressed(ord("S"));
+
+if(hspI< -1) {
+	hspI ++;
+} else if( hspI > 1) {
+	hspI --;
+} else{
+	hspI = 0;
+}
 
 var move = key_right - key_left
 //movement
 if(!diveKick) {
-	hsp = move * walkSpd;
+	hsp = move * walkSpd + hspI;
 }
 vsp += grv;
 
@@ -66,6 +74,8 @@ if(diveKick&& !place_meeting(x,y+1,obj_Wall)) {
 } else if(diveKick) {
 	diveKick = false;
 	instance_create_layer(x-32,y+32,"Cracks",obj_Crack);
+	instance_create_layer(x,y,"Cracks",obj_screenShake);
+	obj_Gun.fireingDelay = 18;
 }else{
 	image_speed = 1;
 	
@@ -78,4 +88,5 @@ if(diveKick&& !place_meeting(x,y+1,obj_Wall)) {
 
 if(hsp !=0) {
 	image_xscale = abs(image_xscale)*sign(hsp);
+	//obj_Gun.image_xscale = abs(obj_Gun.image_xscale)*sign(hsp);
 }

@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "71483c22-89bd-4a81-b153-b247e22c2a66",
+            "Value": {
+                "id": "6ed3d806-73dd-44e3-bf35-1ba50d96f7f8",
+                "resourcePath": "objects\\obj_Bullet\\obj_Bullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "80c4a6d1-3bb7-4b0a-9f8a-ab18f7a877d9",
             "Value": {
                 "id": "5a164256-84a3-446c-8873-39112ffafe64",
@@ -140,6 +148,22 @@
                 "id": "14475988-449a-4eee-82fc-3edba7f44fc5",
                 "resourcePath": "views\\8bff99ef-04b7-43af-85aa-9d71eea262b9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9a6adb21-141b-47ae-9191-bd01b6259c5a",
+            "Value": {
+                "id": "bf5488cf-86ed-4176-af12-f51a7165d3c4",
+                "resourcePath": "sprites\\spr_Bullet\\spr_Bullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9c5fadef-a10f-41fd-a212-839320167f27",
+            "Value": {
+                "id": "a24d4cce-4a5f-48aa-88fb-f03b6eb1ca6a",
+                "resourcePath": "sprites\\spr_Gun\\spr_Gun.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -164,6 +188,22 @@
                 "id": "e33e907a-99f5-4592-bc3f-1bea5d9deb1c",
                 "resourcePath": "views\\abafe707-6e48-465a-9353-2e78c8fe96c9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c4f2705b-b7fe-4036-9e04-c723612375f0",
+            "Value": {
+                "id": "176d483d-c8dc-4bb4-aed4-30b7201b35ee",
+                "resourcePath": "objects\\obj_screenShake\\obj_screenShake.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c73fc1dd-7a80-45f6-abff-4077889c0a8a",
+            "Value": {
+                "id": "f366eafd-c9dc-4eb9-9aca-6e02017edea9",
+                "resourcePath": "objects\\obj_Gun\\obj_Gun.yy",
+                "resourceType": "GMObject"
             }
         },
         {
