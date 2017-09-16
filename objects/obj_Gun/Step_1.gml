@@ -19,7 +19,7 @@ if(mouse_check_button(mb_left)) && (fireingDelay < 0 && !obj_Player.diveKick) {
 	}
 	
 	with(obj_Player) {
-		hspI = (hsp - lengthdir_x(other.recoil,other.image_angle))*2;
+		hspI = (hsp - lengthdir_x(other.recoil,other.image_angle));
 		vsp = (vsp - lengthdir_y(other.recoil,other.image_angle))*0.5;
 	}
 }

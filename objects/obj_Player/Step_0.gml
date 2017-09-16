@@ -5,6 +5,17 @@ key_right = keyboard_check(vk_right)|| keyboard_check(ord("D"));
 key_up = keyboard_check_pressed(vk_up)|| keyboard_check_pressed(ord("W"));
 key_down = keyboard_check_pressed(vk_down)|| keyboard_check_pressed(ord("S"));
 
+
+//slow Motion
+key_space = keyboard_check(vk_space);
+
+if(key_space) {
+	room_speed = 30;
+} else {
+	room_speed = 60;
+}
+
+//gun recoil horisontal solution
 if(hspI< -1) {
 	hspI ++;
 } else if( hspI > 1) {
