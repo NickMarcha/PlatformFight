@@ -19,7 +19,7 @@ if(place_meeting(x+hsp,y,obj_Wall)) {
 	
 		x += sign(hsp);
 	}
-	hsp = 0;
+	hsp = hsp * -1;
 }
 
 
@@ -63,3 +63,10 @@ if(hsp !=0) {
 	image_xscale = abs(image_xscale)*sign(hsp);
 	//obj_Gun.image_xscale = abs(obj_Gun.image_xscale)*sign(hsp);
 }
+
+// bullet damage
+if(flash > 0) {
+	sprite_index =spr_EnemyW;
+	flash--;
+}
+

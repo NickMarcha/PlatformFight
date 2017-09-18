@@ -85,7 +85,7 @@ if(diveKick&& !place_meeting(x,y+1,obj_Wall)) {
 } else if(diveKick) {
 	diveKick = false;
 	instance_create_layer(x-32,y+32,"Cracks",obj_Crack);
-	instance_create_layer(x,y,"Cracks",obj_screenShake);
+	instance_create_layer(x,y,"Cracks",obj_screenShake_5);
 	obj_Gun.fireingDelay = 18;
 }else{
 	image_speed = 1;

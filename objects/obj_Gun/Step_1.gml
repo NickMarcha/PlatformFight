@@ -8,8 +8,9 @@ fireingDelay --;
 recoil = max (0, recoil -1);
 
 if(mouse_check_button(mb_left)) && (fireingDelay < 0 && !obj_Player.diveKick) {
-	fireingDelay = 10;
+	fireingDelay = 6;
 	recoil = 4;
+	instance_create_layer(x,y,layer,obj_screenShake_2)
 	
 	with(instance_create_layer(x,y,"Bullets",obj_Bullet)) {
 		speed = 25;
